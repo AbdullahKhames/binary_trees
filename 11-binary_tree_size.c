@@ -17,18 +17,18 @@ size_t binary_tree_size(const binary_tree_t *tree)
 	}
 	if (tree)
 	{
-        if (tree->right)
-        {
-           nodes_right = 1 + binary_tree_size(tree->right);
-        }
-        if (tree->left)
-        {
-           nodes_left = 1 + binary_tree_size(tree->left);
-        }
+		if (tree->right)
+		{
+			nodes_right = 1 + binary_tree_size(tree->right);
+		}
+		if (tree->left)
+		{
+			nodes_left = 1 + binary_tree_size(tree->left);
+		}
 
 
 		total_nodes = 1 + nodes_right + nodes_left;
 
-    }
-    return (total_nodes);
+	}
+	return (total_nodes);
 }
